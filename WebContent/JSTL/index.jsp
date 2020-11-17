@@ -28,17 +28,17 @@
         <div class="form-group">
             <label for="name">Your phone</label>
             <input name="phone" value="${phone}" type="phone" class="form-control" id="name" required>
-            
-        </div>
-
-        <div class="form-group">
-            <label for="email">Your email</label>
-            <input name="email" type="email" value="${email}" class="form-control" id="email">
             <c:if test="${not empty phoneErr}">
             	<div class="alert alert-danger mt-3" role="alert">
 					${phoneErr }		  
 				</div>
             </c:if>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your email</label>
+            <input name="email" type="email" value="${email}" class="form-control" id="email" required>
+            
         </div>
 
         <br>
